@@ -42,7 +42,12 @@ class AgentEar < Formula
     #    --no-binary=:all: policy.  pip install with default settings uses
     #    pre-built wheels from PyPI, avoiding the Rust build entirely.
     venv = virtualenv_create(libexec, "python3.13")
-    system libexec/"bin/pip", "install", "--no-compile", buildpath/"src"
+    # Install agent-ear + all Python deps from PyPI into the venv.
+    # Use python3.13 -m pip (not venv pip) since Homebrew creates venvs
+    # with --without-pip. The --python flag targets the venv.
+    system "python3.13", "-m", "pip",
+           "--python=#{libexec/"bin/python"}",
+           "install", "--no-compile", buildpath/"src"
 
     # pip creates bin/agent-ear (from [project.scripts] in pyproject.toml).
     # Rename to agent-ear-core to match the dual-binary architecture.
