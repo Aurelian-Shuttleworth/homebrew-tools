@@ -24,7 +24,7 @@ class AgentEar < Formula
   desc "Agentic voice capture — agent-steerable audio transcription"
   homepage "https://github.com/Aurelian-Shuttleworth/agent-ear"
   url "https://github.com/Aurelian-Shuttleworth/agent-ear/archive/refs/tags/v1.1.0-alpha.tar.gz"
-  sha256 "5633b7c51784aa073ca1706b4a1a1d0c6dd9204f09648658e56ffeb06e80cb7e"
+  sha256 "c2e5a89f729f5c04a69f130205c20adc763b7eaec979eb8c620489cfb1391910"
   license all_of: ["MIT", "Apache-2.0"]
 
   depends_on "python@3.13"
