@@ -49,9 +49,9 @@ class AgentEar < Formula
            "--python=#{libexec/"bin/python"}",
            "install", "--no-compile", buildpath/"src"
 
-    # pip creates bin/agent-ear (from [project.scripts] in pyproject.toml).
-    # Rename to agent-ear-core to match the dual-binary architecture.
-    mv bin/"agent-ear", bin/"agent-ear-core"
+    # pip --python=venv installs entry points into libexec/bin/.
+    # Link to bin/agent-ear-core to match the dual-binary architecture.
+    bin.install_symlink libexec/"bin/agent-ear" => "agent-ear-core"
 
     # 2. Install prompt templates
     (share/"agent-ear-templates").install Dir["templates/*.md"]
