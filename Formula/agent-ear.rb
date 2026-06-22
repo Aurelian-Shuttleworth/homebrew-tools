@@ -40,8 +40,8 @@ class AgentEar < Formula
   end
 
   resource "anyio" do
-    url "https://files.pythonhosted.org/packages/94/c2/4a05243a1a5e1e105bea3e28fcc8793da39d636392c3e5e6a93c69c26d90/anyio-4.14.0.tar.gz"
-    sha256 "d8316f9c22060f5f4a2fb0dfe0aeef7c99c28a91beeb4474dc86e5419e8da13a"
+    url "https://files.pythonhosted.org/packages/1c/b5/001890774a9552aff22502b8da382593109ce0c95314abaebbb116567545/anyio-4.14.0.tar.gz"
+    sha256 "b47c1f9ccf73e67021df785332508f99379c68fa7d0684e8e3492cb1d4b23f89"
   end
 
   resource "cffi" do
@@ -70,8 +70,8 @@ class AgentEar < Formula
   end
 
   resource "google-auth" do
-    url "https://files.pythonhosted.org/packages/2e/c9/46680210e9faf41c31d47bac94c440fc7e95ab0e3e1f9e73039e87b83f53/google_auth-2.55.0.tar.gz"
-    sha256 "28a15bc3eda09f861afb8a1d0c21e8bfb27c61cba71e9a637b4a3a44a0429995"
+    url "https://files.pythonhosted.org/packages/81/1c/70b23fc52b2bb3c70b379f3bd05c4a60ab3a873e30c6bd21c57e0154848a/google_auth-2.55.0.tar.gz"
+    sha256 "fcd3a130f575fa36403d38774af1c64a4fbfbca09215f0589d2372b5119697cb"
   end
 
   resource "google-cloud-core" do
@@ -160,8 +160,8 @@ class AgentEar < Formula
   end
 
   resource "pydantic-core" do
-    url "https://files.pythonhosted.org/packages/ad/88/5f2260bdfae97aabf98af235ab45a06f2808f2d88ade7c2f27e5af4f3a38/pydantic_core-2.46.4.tar.gz"
-    sha256 "4d591c2d7e540aeca43da23272bf9bd2a506e8c0c70c85fbce6306ed36e39e22"
+    url "https://files.pythonhosted.org/packages/9d/56/921726b776ace8d8f5db44c4ef961006580d91dc52b803c489fafd1aa249/pydantic_core-2.46.4.tar.gz"
+    sha256 "62f875393d7f270851f20523dd2e29f082bcc82292d66db2b64ea71f64b6e1c1"
   end
 
   resource "PyYAML" do
@@ -185,8 +185,8 @@ class AgentEar < Formula
   end
 
   resource "soundfile" do
-    url "https://files.pythonhosted.org/packages/b6/96/0f2a26b454abf32e8e18e0c13aba571e76622bf76038db79a5c57c5e463f/soundfile-0.14.0.tar.gz"
-    sha256 "f69e1b2fa83705c63c7e76cf8a803e8df4a7bda33e45a5896e13f78f78b2e8a6"
+    url "https://files.pythonhosted.org/packages/d2/db/949331952a6fb1c5b12e9de80fd08747966c2039d1a61db4764fbd3981c2/soundfile-0.14.0.tar.gz"
+    sha256 "ba1c1a2d618bca5c406647c83b89f07cc8810fa506a50622a6993ba130c1de11"
   end
 
   resource "tenacity" do
